@@ -49,9 +49,9 @@ def dead():
 
 def river():
     global score
-    score+=60
+    score+=50
     print("*********************************")
-    print(f"RIVER: You've found a treasure in the river bed (+60 Score)!! | Score: {score} Health: {health}")
+    print(f"RIVER: You've found a treasure in the river bed (+50 Score)!! | Score: {score} Health: {health}")
     print("*********************************")
     main()
 

@@ -68,8 +68,8 @@ def cave():
 
 def river():
     global score
-    score+=60
-    intro.config(text="RIVER: You found a treasure in the river bed!\n (+60 Score)")
+    score+=50
+    intro.config(text="RIVER: You found a treasure in the river bed!\n (+50 Score)")
     score_label.config(text=f"Score: {score}")
 def quit():
     root.destroy()
