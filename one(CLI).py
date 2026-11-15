@@ -3,7 +3,9 @@ health=100
 score=0
 def main():
     print("You are in the forest")
-    print("1. Cave  2. River  3. Quit")
+    print("1.Cave \n" \
+    "2.River \n" \
+    "3.Quit")
     n=int(input("Enter Choice: "))
     print("")
     if n==1:
@@ -49,7 +51,7 @@ def river():
     global score
     score+=60
     print("*********************************")
-    print(f"RIVER: You've found a treasure in the river bed!! | Score: {score} Health: {health}")
+    print(f"RIVER: You've found a treasure in the river bed (+60 Score)!! | Score: {score} Health: {health}")
     print("*********************************")
     main()
 
