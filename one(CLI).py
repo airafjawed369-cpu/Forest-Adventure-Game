@@ -6,23 +6,29 @@ def main():
     print("1.Cave \n" \
     "2.River \n" \
     "3.Quit")
-    n=int(input("Enter Choice: "))
-    print("")
-    if n==1:
-        cave()
-    elif n==2:
-        river()
-    elif n==3:
-        print("Thanku for playing")
-        print(f"Final health: {health}")
-        print(f"Final Score: {score}")
-        exit
-    else:
-        print("Invalid Syntax")
+    try:
+        n=int(input("Enter Choice: "))
+        print("")
+        if n==1:
+            cave()
+        elif n==2:
+            river()
+        elif n==3:
+            print("Thanku for playing")
+            print(f"Final health: {health}")
+            print(f"Final Score: {score}")
+            exit
+        else:
+            print("Invalid Choice. Enter 1,2 or 3")
+            main()
+    except:
+        print("Invalid Choice. Enter 1,2 or 3")
+        print("")
         main()
+        
 
 def cave():
-    dam=random.randint(10,40)
+    dam=30
     global health
     global score
     health-=dam
